@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NFSM/Release Notes 1.7.6.md",
+                "file": "NFSM/Speech To text.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.6"
+              "title": "Speech To text"
             }
           }
         ],
@@ -188,10 +188,13 @@
   },
   "active": "7dbde090adfa9ed6",
   "lastOpenFiles": [
-    "Nomadia Protect/Features/SOS By X Button.md",
-    "NFSM/Release Notes 1.7.6.md",
-    "NFSM/Page Size.md",
+    "SpeechToTextSurvey_FR.json",
+    "SpeechToTextSurvey_EN.json",
     "NFSM/NFSM.md",
+    "NFSM/Speech To text.md",
+    "NFSM/Release Notes 1.7.6.md",
+    "Nomadia Protect/Features/SOS By X Button.md",
+    "NFSM/Page Size.md",
     "Nomadia Protect/Features/Bluetooth Beacons.md",
     "NFSM",
     "Nomadia Delivery/Bulk Edit.md",

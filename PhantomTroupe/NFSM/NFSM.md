@@ -1,2 +1,4 @@
 - [ ] [[Page size]]
 - [ ] [[Release Notes 1.7.6]]
+- [ ] Speech To Text
+- [ ] 

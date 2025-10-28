@@ -1,0 +1,234 @@
+{
+ "title": "SpeechToTextSurvey_EN",
+ "logoPosition": "right",
+ "pages": [
+  {
+   "name": "page1",
+   "elements": [
+    {
+     "type": "boolean",
+     "name": "Customer present on site",
+     "title": "Customer present on site",
+     "isRequired": true,
+     "labelTrue": "Yes",
+     "labelFalse": "No"
+    },
+    {
+     "type": "radiogroup",
+     "name": "Intervention type",
+     "title": "Intervention type",
+     "choices": [
+      "Preventive maintenance",
+      "Repair",
+      "Installation",
+      "Quality control"
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "Equipment concerned",
+     "title": "Equipment concerned",
+     "choices": [
+      "Electrical panel",
+      "Water heater",
+      "Pump",
+      "Meter"
+     ],
+     "showOtherItem": true,
+     "otherText": "Other (specify)"
+    },
+    {
+     "type": "dropdown",
+     "name": "Equipment Status",
+     "title": "Equipment Status",
+     "choices": [
+      "Functional",
+      "Partially Functional",
+      "Out of Service"
+     ]
+    },
+    {
+     "type": "comment",
+     "name": "Work Completed",
+     "title": "Work Completed"
+    },
+    {
+     "type": "text",
+     "name": "Measured Temperature",
+     "title": "Measured Temperature (°C)",
+     "inputType": "number"
+    },
+    {
+     "type": "text",
+     "name": "Time Spent on Site",
+     "title": "Time Spent on Site"
+    },
+    {
+     "type": "rating",
+     "name": "Satisfaction Level of the customer",
+     "title": "Customer Satisfaction Level",
+     "isRequired": true
+    }
+   ]
+  },
+  {
+   "name": "page2",
+   "elements": [
+    {
+     "type": "comment",
+     "name": "comment",
+     "title": "Comment",
+     "isRequired": true
+    },
+    {
+     "type": "tagbox",
+     "name": "equipment_concerned",
+     "title": "Equipment concerned",
+     "choices": [
+      {
+       "value": "electrical_panel",
+       "text": "Electrical Panel"
+      },
+      {
+       "value": "water heater",
+       "text": "Water Heater"
+      },
+      {
+       "value": "pump",
+       "text": "Pump"
+      },
+      {
+       "value": "meter",
+       "text": "Meter"
+      }
+     ],
+     "showOtherItem": true,
+     "otherText": "Other (specify)",
+     "showSelectAllItem": true,
+     "selectAllText": "Select All"
+    },
+    {
+     "type": "ranking",
+     "name": "ranking_operations_completed",
+     "title": "Please rank the completed operations in order of **Importance/Effort**:",
+     "choices": [
+      {
+       "value": "replacement_valve",
+       "text": "Replacement of seized control valve"
+      },
+      {
+       "value": "meter_recalibration",
+       "text": "Inconsistent meter recalibration"
+      },
+      {
+       "value": "pump_cleaning",
+       "text": "Removal and cleaning of hydraulic pump"
+      },
+      {
+       "value": "electrical_check",
+       "text": "Check electrical connections"
+      }
+     ]
+    },
+    {
+     "type": "multipletext",
+     "name": "works_completed",
+     "title": "Works Completed",
+     "items": [
+      {
+       "name": "works1",
+       "title": "Works 1"
+      },
+      {
+       "name": "works2",
+       "title": "Works 2"
+      },
+      {
+       "name": "works3",
+       "title": "Works 3"
+      },
+      {
+       "name": "works4",
+       "title": "Works 4"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "date_and_time_of_intervention",
+     "title": "Date and Time of Intervention (Start/End)",
+     "description": "Based on 'I spent approximately one and a half hours on site.' - Please enter the actual date and time.",
+     "isRequired": true,
+     "inputType": "datetime-local"
+    },
+    {
+     "type": "text",
+     "name": "desired_follow-up_week",
+     "title": "Desired follow-up week (Client: 'in a few months')",
+     "description": "Use an approximate follow-up date (e.g., 3 months later). ISO 8601 format (YYYY-W##)",
+     "inputType": "week"
+    },
+    {
+     "type": "text",
+     "name": "desired_follow-up_month",
+     "title": "Desired follow-up month (Client: 'in a few months')",
+     "description": "Use an approximate follow-up month (e.g., 3 months later). ISO 8601 format (YYYY-MM)",
+     "inputType": "month"
+    },
+    {
+     "type": "text",
+     "name": "Equipment_color_code",
+     "title": "Equipment Color Code (if applicable)",
+     "description": "The color is not mentioned in the text. Leave the default or insert if applicable.",
+     "defaultValue": "#ffffff",
+     "inputType": "color"
+    },
+    {
+     "type": "text",
+     "name": "client_email",
+     "title": "Client Email",
+     "description": "The email address is not mentioned in the text.",
+     "inputType": "email"
+    },
+    {
+     "type": "text",
+     "name": "client_telephone",
+     "title": "Client Phone Number",
+     "description": "The phone number is not mentioned in the text.",
+     "inputType": "tel"
+    },
+    {
+     "type": "matrixdynamic",
+     "name": "intervention_et_equipements_details_matrix",
+     "title": "Intervention and Equipment Details",
+     "description": "List of equipment and operations performed, based on the report.",
+     "columns": [
+      {
+       "name": "Item",
+       "title": "Equipment or Operation",
+       "cellType": "text"
+      },
+      {
+       "name": "Status",
+       "title": "Status (Functional / OK)",
+       "cellType": "dropdown",
+       "choices": [
+        "OK",
+        "To be monitored",
+        "Replaced",
+        "Not relevant"
+       ]
+      },
+      {
+       "name": "Comments",
+       "title": "Note/Observation",
+       "cellType": "text"
+      }
+     ],
+     "rowCount": 7,
+     "addRowText": "Add Equipment/Operation"
+    }
+   ]
+  }
+ ]
+}

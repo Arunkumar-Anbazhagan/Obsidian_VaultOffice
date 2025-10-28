@@ -1,0 +1,234 @@
+{
+ "title": "SpeechToTextSurvey_FR",
+ "logoPosition": "right",
+ "pages": [
+  {
+   "name": "page1",
+   "elements": [
+    {
+     "type": "boolean",
+     "name": "Client présent sur place",
+     "title": "Client présent sur place",
+     "isRequired": true,
+     "labelTrue": "Oui",
+     "labelFalse": "Non"
+    },
+    {
+     "type": "radiogroup",
+     "name": "Type d’intervention",
+     "title": "Type d’intervention",
+     "choices": [
+      "Maintenance préventive",
+      "Réparation",
+      "Installation",
+      "Contrôle qualité"
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "Équipements concernés",
+     "title": "Équipements concernés",
+     "choices": [
+      "Tableau électrique",
+      "Chauffe-eau",
+      "Pompe",
+      "Compteur"
+     ],
+     "showOtherItem": true,
+     "otherText": "Autre (préciser)"
+    },
+    {
+     "type": "dropdown",
+     "name": "Statut de l’équipement",
+     "title": "Statut de l’équipement",
+     "choices": [
+      "Fonctionnel",
+      "Partiellement fonctionnel",
+      "Hors service"
+     ]
+    },
+    {
+     "type": "comment",
+     "name": "Travaux réalisés",
+     "title": "Travaux réalisés"
+    },
+    {
+     "type": "text",
+     "name": "Température mesurée",
+     "title": "Température mesurée (°C)",
+     "inputType": "number"
+    },
+    {
+     "type": "text",
+     "name": "Temps passé sur site",
+     "title": "Temps passé sur site"
+    },
+    {
+     "type": "rating",
+     "name": "Niveau de satisfaction du client",
+     "title": "Niveau de satisfaction du client",
+     "isRequired": true
+    }
+   ]
+  },
+  {
+   "name": "page2",
+   "elements": [
+    {
+     "type": "comment",
+     "name": "comment",
+     "title": "Commentaire",
+     "isRequired": true
+    },
+    {
+     "type": "tagbox",
+     "name": "équipements_concernés",
+     "title": "Équipements concernés",
+     "choices": [
+      {
+       "value": "tableau_électrique",
+       "text": "Tableau électrique"
+      },
+      {
+       "value": "chauffe-eau",
+       "text": "Chauffe-eau"
+      },
+      {
+       "value": "pompe",
+       "text": "Pompe"
+      },
+      {
+       "value": "compteur",
+       "text": "Compteur"
+      }
+     ],
+     "showOtherItem": true,
+     "otherText": "Autre (préciser)",
+     "showSelectAllItem": true,
+     "selectAllText": "Sélectionner tout"
+    },
+    {
+     "type": "ranking",
+     "name": "classement_opérations_terminées",
+     "title": "Veuillez classer les opérations réalisées par ordre d'**Importance/Effort** :",
+     "choices": [
+      {
+       "value": "valve_de_remplacement",
+       "text": "Remplacement de la vanne de régulation grippée"
+      },
+      {
+       "value": "réétalonnage_du_compteur",
+       "text": "Réétalonnage du compteur incohérent"
+      },
+      {
+       "value": "nettoyage_de_pompe",
+       "text": "Dépose et nettoyage de la pompe hydraulique"
+      },
+      {
+       "value": "vérification_électrique",
+       "text": "Vérification des connexions électriques"
+      }
+     ]
+    },
+    {
+     "type": "multipletext",
+     "name": "travaux_réalisés",
+     "title": "Travaux réalisés",
+     "items": [
+      {
+       "name": "travaux1",
+       "title": "Travaux 1"
+      },
+      {
+       "name": "travaux2",
+       "title": "Travaux 2"
+      },
+      {
+       "name": "travaux3",
+       "title": "Travaux 3"
+      },
+      {
+       "name": "travaux4",
+       "title": "Travaux 4"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "date_et_heure_de_intervention",
+     "title": "Date et Heure de l'Intervention (Début/Fin)",
+     "description": "Basé sur 'J’ai passé environ une heure trente sur site.' - Veuillez insérer la date et l'heure réelles.",
+     "isRequired": true,
+     "inputType": "datetime-local"
+    },
+    {
+     "type": "text",
+     "name": "semaine_de_suivi_souhaitée",
+     "title": "Semaine de suivi souhaitée (Client : 'dans quelques mois')",
+     "description": "Utilisation d'une date de suivi approximative (ex: 3 mois plus tard). Format ISO 8601 (YYYY-W##)",
+     "inputType": "week"
+    },
+    {
+     "type": "text",
+     "name": "mois_de_suivi_souhaité",
+     "title": "Mois de suivi souhaité (Client : 'dans quelques mois')",
+     "description": "Utilisation d'un mois de suivi approximatif (ex: 3 mois plus tard). Format ISO 8601 (YYYY-MM)",
+     "inputType": "month"
+    },
+    {
+     "type": "text",
+     "name": "code_couleur_Équipement",
+     "title": "Code Couleur d'un Équipement (si pertinent)",
+     "description": "La couleur n'est pas mentionnée dans le texte. Laissez le défaut ou insérez si pertinent.",
+     "defaultValue": "#ffffff",
+     "inputType": "color"
+    },
+    {
+     "type": "text",
+     "name": "client_email",
+     "title": "E-mail du Client",
+     "description": "L'adresse e-mail n'est pas mentionnée dans le texte.",
+     "inputType": "email"
+    },
+    {
+     "type": "text",
+     "name": "telephone_du_client",
+     "title": "Numéro de Téléphone du Client",
+     "description": "Le numéro de téléphone n'est pas mentionné dans le texte.",
+     "inputType": "tel"
+    },
+    {
+     "type": "matrixdynamic",
+     "name": "intervention_et_equipements_details_matrix",
+     "title": "Détails de l'Intervention et Équipements",
+     "description": "Liste des équipements et des opérations effectuées, basées sur le rapport.",
+     "columns": [
+      {
+       "name": "Item",
+       "title": "Équipement ou Opération",
+       "cellType": "text"
+      },
+      {
+       "name": "Statut",
+       "title": "Statut (Fonctionnel / OK)",
+       "cellType": "dropdown",
+       "choices": [
+        "OK",
+        "À surveiller",
+        "Remplacé",
+        "Non pertinent"
+       ]
+      },
+      {
+       "name": "Commentaires",
+       "title": "Note/Observation",
+       "cellType": "text"
+      }
+     ],
+     "rowCount": 7,
+     "addRowText": "Ajouter un équipement/une opération"
+    }
+   ]
+  }
+ ]
+}
