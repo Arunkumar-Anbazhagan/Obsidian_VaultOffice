@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"47667df5c6de5d21","type":"text","text":"**Customize Status Labels**\n","x":-402,"y":-73,"width":250,"height":60},
+		{"id":"7231ab35645362aa","type":"text","text":"  **Bulk Edit**","x":-320,"y":-1320,"width":250,"height":60},
+		{"id":"c92e0131536a426f","type":"text","text":"**Transporter** ","x":-645,"y":-1016,"width":250,"height":60},
+		{"id":"252916300557c905","type":"text","text":"**Contractor**","x":130,"y":-1039,"width":250,"height":60},
+		{"id":"30d0af83bdcaab94","type":"file","file":"Nomadia Delivery/Bulk Edit.md","x":-1615,"y":-720,"width":1220,"height":940},
+		{"id":"fc2b4d5d43433cc7","x":779,"y":-837,"width":1261,"height":1837,"type":"file","file":"Nomadia Delivery/Bulk edit on Contractor.md"}
+	],
+	"edges":[
+		{"id":"19c0e3ccc2be760b","fromNode":"7231ab35645362aa","fromSide":"bottom","toNode":"c92e0131536a426f","toSide":"top"},
+		{"id":"90130461a5e55f44","fromNode":"7231ab35645362aa","fromSide":"bottom","toNode":"252916300557c905","toSide":"top"},
+		{"id":"0e3eb6ffa169cad5","fromNode":"c92e0131536a426f","fromSide":"bottom","toNode":"30d0af83bdcaab94","toSide":"top"},
+		{"id":"b66c0690c8f1a783","fromNode":"252916300557c905","fromSide":"bottom","toNode":"fc2b4d5d43433cc7","toSide":"top"}
+	]
+}
